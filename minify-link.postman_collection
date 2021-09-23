@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "d53586a0-1e6f-436c-b49b-9e60b6e5b4f9",
+		"name": "Minify Link",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Minify Link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "url",
+							"value": "https://google.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/minify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"minify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Minify Link",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/minify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"minify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Redirect Minify Link",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/r/K433wRzjsz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"r",
+						"K433wRzjsz"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
