@@ -22,3 +22,20 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Installation
+
+### Vendor
+Install required vendor using command below for running site.
+```
+$ composer install
+```
+
+### Migration
+Install required database and seeder, or refer to [Lumen](https://lumen.laravel.com/) or [Laravel Migration](https://laravel.com/docs/8.x/migrations).
+```
+$ php artisan migrate
+```
+
+### Documentation
+Import `minify-link.postman_collection` file into your Postman application.
