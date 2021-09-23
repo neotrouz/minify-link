@@ -42,9 +42,7 @@ $router->get('/r/{hash:\w+}', function (string $hash) use ($router) {
  * @return Response
  */
 $router->get('/minify', function () use ($router) {
-    return response()->json([
-        'data' => Link::all(),
-    ]);
+    return response()->json(Link::query()->paginate(20));
 });
 
 /**
