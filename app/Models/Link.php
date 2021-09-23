@@ -14,11 +14,6 @@ class Link extends Model
 {
 
     /**
-     * @var string
-     */
-    protected $connection = 'pgsql';
-
-    /**
      * @var string table name
      */
     protected $table = 'link';
