@@ -25,5 +25,11 @@ Install required database and seeder, or refer to [Laravel Migration](https://la
 $ php artisan migrate
 ```
 
+### Serving Application
+Run command below to serve application with built-in PHP development server.
+```
+$ php -S localhost:8000 -t public
+```
+
 ### Documentation
 Import `minify-link.postman_collection` file into your Postman application.
